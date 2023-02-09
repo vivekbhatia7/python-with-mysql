@@ -5,11 +5,11 @@ import mysql.connector as connector
 
 class DBHelper():
     def __init__(self):
-        self.con = connector.connect(host='localhost',
-                                    user='root',
-                                    password='Vivek@709',
-                                    port='3306',
-                                    database='python_video')
+        self.con = connector.connect(host='',
+                                    user='',
+                                    password='',
+                                    port='',
+                                    database='')
         query= 'create table if not exists dtaa(userId int primary key, userName varchar(45))'
         cur=self.con.cursor()
         cur.execute(query)
